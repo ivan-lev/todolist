@@ -38,6 +38,12 @@ body {
   flex-direction: column;
 }
 
+.todo__panel {
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+  }
+}
+
 .todo__list-item {
   color: #111111;
   list-style-type: none;
@@ -61,6 +67,7 @@ body {
   border: 0;
   border-radius: 5px;
   padding: 10px 20px;
+  color: var(--dark-green);
   background-color: var(--yellow);
   font-size: 18px;
 }
