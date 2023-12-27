@@ -30,7 +30,7 @@ body {
   padding: 30px;
   font-size: 18px;
   background-color: var(--light-green, #455a64);
-  border-radius: 10px;
+  border-radius: 15px;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(13, 24, 32, 0.8);
   -moz-box-shadow: 4px 4px 8px 0px rgba(13, 24, 32, 0.8);
   box-shadow: 4px 4px 8px 0px rgba(13, 24, 32, 0.8);
