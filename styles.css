@@ -17,13 +17,10 @@ body {
   gap: 30px;
   max-width: 800px;
   margin: 0 auto;
-}
 
-.todo__panel,
-.todo__list {
-  background-color: var(--light-green, #455a64);
-  padding: 10px;
-  border-radius: 10px;
+  @media screen and (max-width: 520px) {
+    padding: 25px;
+  }
 }
 
 .todo__list,
@@ -32,6 +29,15 @@ body {
   gap: 20px;
   padding: 30px;
   font-size: 18px;
+  background-color: var(--light-green, #455a64);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(13, 24, 32, 0.8);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(13, 24, 32, 0.8);
+  box-shadow: 4px 4px 8px 0px rgba(13, 24, 32, 0.8);
+
+  @media screen and (max-width: 520px) {
+    padding: 20px;
+  }
 }
 
 .todo__list {
@@ -39,7 +45,7 @@ body {
 }
 
 .todo__panel {
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 520px) {
     flex-direction: column;
   }
 }
@@ -53,6 +59,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.8);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.8);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.8);
+
+  @media screen and (max-width: 520px) {
+    padding: 10px 15px 10px 20px;
+  }
 }
 
 .todo__input {
@@ -60,7 +73,7 @@ body {
   border: 0;
   border-radius: 5px;
   font-size: 18px;
-  padding-left: 20px;
+  padding: 10px 20px;
 }
 
 .todo__add-button {
@@ -70,6 +83,11 @@ body {
   color: var(--dark-green);
   background-color: var(--yellow);
   font-size: 18px;
+  height: 45px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .todo__delete-button {
